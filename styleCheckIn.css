@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing:border-box;
+    
+  }
+  body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    width: 100%;
+    height: 100%;
+   }
+.brand{
+    font-size: 50px;
+    color: aliceblue;
+}
+.dropdown{
+    margin-top: 80px;
+    background-color: yellow;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.form-select{
+    font-size: 25px;
+    background-color: bisque;
+    margin-top: 40px;
+    width: 700px;
+}
+.row{
+    font-size: 45px;
+}
+.container p{
+    font-size: 20px;
+}
+.hh-checkin{
+    background-color: yellow;
+    /* margin-left: 100px; */
+    margin-left: 150px;
+}
+.hh-box{
+    border-radius: 25px;
+    height: 235px;
+    width: 220px;
+    background-color: rgb(63, 243, 72);
+}
+.container  button{
+    margin-top: 25px;
+}
+.word{
+    /* text-align: center; */
+    margin-top: 50px;
+}
+.active{
+    margin-top: 100px;
+}
+.form-control {
+    margin-left: 4%;
+    width: 95%;
+    height: 25%;
+  }
+  .form-label{
+    position:relative;
+    /* max-width: 100%;
+    height: 100%; */
+    margin-bottom: 1%;
+    margin-left: 4%;
+    font-size: 20px;
+  }
+  .form-select2{
+    font-size: 23px;
+    background-color: #dfdcdc;
+    margin-top: 5px;
+    margin-left: 4%;
+    width: 95%;
+    height: 25%;
+}
+.container-all{
+    width: 500px;
+    height: 500px;
+}
+
+.boderCheckIn{
+    /* width: 380px; */
+    height: 500px;
+    width: 95%;
+    padding-top: 5%;
+    padding-left: 5%;
+    border: 4px solid grey;
+    border-radius: 10px;
+    margin: auto;
+    /* margin-left: -10%; */
+    /* background-color: aqua; */
+   
+}
+.form-select3{
+    font-size: 25px;
+    background-color: #dfdcdc;
+    width: 85%;
+    /* height: 50%; */
+    margin-left: auto;
+
+}

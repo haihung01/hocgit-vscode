@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styleCheckIn.css" />
+    <title>Check In</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" style="height: 100vh;">
+            <div class="col-sm-2.3 bg-danger">
+                <div class="wrapper  d-none d-sm-block ">
+                    <div class="icon-bar">
+                        <a class="active" href="#"><i class="fa fa-home" style="color: rgb(226, 219, 219);">
+                                Menu</i></a>
+                        <!-- Sidebar  -->
+                        <nav id="sidebar">
+                            <ul class="nav nav-pills ">
+
+                                <li class="nav-item dropdown bg-danger ">
+                                    <a class="nav-link dropdown-toggle fas fa-align-justify" data-toggle="dropdown"
+                                        href="#" role="button" aria-haspopup="true" aria-expanded="false"
+                                        style="font-size: 40px; margin-left: -45px;"> Room Status</a>
+                                    <div class="dropdown-menu" style="font-size: 31px;">
+                                        <a class="dropdown-item" href="#">Tên dịch vụ</a>
+                                        <a class="dropdown-item" href="#">Giá tiền</a>
+                                        <a class="dropdown-item" href="#">Ghi chứ</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Các khoảng khác...</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+            <!--rightttttttttttttttttttttttttttttt-->
+
+            <div class="col sm-9.7">
+                <h1>Room Status</h1>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <div class="allBox"> <br>
+                    <div class="container">
+                        <div class="row mt-5">
+                            <div class="hh-box col order-1 ml-5 btn-lg">
+                                <div class="word ml-4">
+                                    <p>Romm number: 101</p>
+                                    <p>Type of room: Standard</p>
+                                </div>
+
+                                <button type="button" class="btn btn-light ml-4" data-toggle="modal"
+                                data-target="#exampleModalCenter">Booking</button>
+                                <!-- bookingggggggggggggggggg -->
+                                
+                         
+                                <!-- Modal -->
+                                <div class="container">
+                                    <!-- <div class="row"> -->
+                                    <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title" id="exampleModalLongTitle">Check in 101
+                                                        - VIP</h1>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <!-- form đăng kí -->
+                                                <div class="row">
+                                                    <div class="col-sm-6 ">
+                                                        <div class="modal-body">
+                                                            <P>THÔNG TIN KHÁCH HÀNG</P>
+                                                        </div>
+                                                        <!-- FORM THÔNG TIN -->
+
+                                                        <!-- ID CARD -->
+                                                        <div class="mb-4 mt-3 ">
+                                                            <label for="confirmpassword" class="form-label">ID
+                                                                CARD</label>
+                                                            <input type="confirmpassword" class="form-control"
+                                                                id="confirmpassword"
+                                                                placeholder="   Must be at least 8 characters..."
+                                                                name="confirmpassword">
+                                                        </div>
+                                                        <!-- CUSTOMER NAME -->
+                                                        <div class="mb-4 mt-3 ">
+                                                            <label for="confirmpassword" class="form-label">CUSTOMER
+                                                                NAME</label>
+                                                            <input type="confirmpassword" class="form-control"
+                                                                id="confirmpassword"
+                                                                placeholder="   Must be at least 8 characters..."
+                                                                name="confirmpassword">
+                                                        </div>
+                                                        <!-- HÌNH THỨC -->
+                                                        <div class="mb-4 mt-3 ">
+                                                            <label for="confirmpassword" class="form-label">HÌNH
+                                                                THỨC</label>
+                                                            <select class="form-select2"
+                                                                aria-label="Default select example">
+                                                                <option selected>Chọn thời gian</option>
+                                                                <option value="1">Hours</option>
+                                                                <option value="2">Day</option>
+                                                                <option value="3">Night</option>
+                                                            </select>
+                                                        </div>
+                                                        <!-- SỐ NGÀY -->
+                                                        <div class="mb-4 mt-3 ">
+                                                            <label for="confirmpassword" class="form-label">SỐ
+                                                                NGÀY</label>
+                                                            <input type="confirmpassword" class="form-control"
+                                                                id="confirmpassword"
+                                                                placeholder="   Must be at least 8 characters..."
+                                                                name="confirmpassword">
+                                                        </div>
+                                                    </div>
+                                                    <!-- border right -->
+                                                    <div class="col-sm-6">
+                                                        <div class="boderCheckIn">
+                                                            <h1>Thêm dịch vụ</h1>
+                                                            <div>
+                                                                <select class="form-select3"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>More services</option>
+                                                                    <option value="1">Tay vịn</option>
+                                                                    <option value="2">Gà 54kg</option>
+                                                                    <option value="3">Bưởi 5 roi</option>
+                                                                    <option value="4">Súc bình xăng con</option>
+                                                                    <option value="5">Khác ...</option>
+                                                                </select>
+                                                                <div class="input-group-append"
+                                                                    style="margin:auto ">
+                                                                    <label class="input-group-text"
+                                                                        for="inputGroupSelect02"
+                                                                        style="background-color: greenyellow;">+</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- các nút---------------- -->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-dismiss="modal">UPDATE</button>
+                                                    <button type="button" class="btn btn-primary">CHECK IN</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Check In: Modal room 101============================================================== -->
+
+                                <button type="button" class="hh-checkin btn btn-light ml-5" data-toggle="modal"
+                                    data-target="#exampleModalCenter">
+                                    Check in
+                                </button>
+
+                                <!-- Modal -->
+                                <div c  lass="container">
+                                    <!-- <div class="row"> -->
+                                    <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title" id="exampleModalLongTitle">Check in 101
+                                                        - VIP</h1>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <!-- form đăng kí -->
+                                                <div class="row">
+                                                    <div class="col-sm-6 ">
+                                                        <div class="modal-body">
+                                                            <P>THÔNG TIN KHÁCH HÀNG</P>
+                                                        </div>
+                                                        <!-- FORM THÔNG TIN -->
+
+                                                        <!-- ID CARD -->
+                                                        <div class="mb-4 mt-3 ">
+                                                            <label for="confirmpassword" class="form-label">ID
+                                                                CARD</label>
+                                                            <input type="confirmpassword" class="form-control"
+                                                                id="confirmpassword"
+                                                                placeholder="   Must be at least 8 characters..."
+                                                                name="confirmpassword">
+                                                        </div>
+                                                        <!-- CUSTOMER NAME -->
+                                                        <div class="mb-4 mt-3 ">
+                                                            <label for="confirmpassword" class="form-label">CUSTOMER
+                                                                NAME</label>
+                                                            <input type="confirmpassword" class="form-control"
+                                                                id="confirmpassword"
+                                                                placeholder="   Must be at least 8 characters..."
+                                                                name="confirmpassword">
+                                                        </div>
+                                                        <!-- HÌNH THỨC -->
+                                                        <div class="mb-4 mt-3 ">
+                                                            <label for="confirmpassword" class="form-label">HÌNH
+                                                                THỨC</label>
+                                                            <select class="form-select2"
+                                                                aria-label="Default select example">
+                                                                <option selected>Chọn thời gian</option>
+                                                                <option value="1">Hours</option>
+                                                                <option value="2">Day</option>
+                                                                <option value="3">Night</option>
+                                                            </select>
+                                                        </div>
+                                                        <!-- SỐ NGÀY -->
+                                                        <div class="mb-4 mt-3 ">
+                                                            <label for="confirmpassword" class="form-label">SỐ
+                                                                NGÀY</label>
+                                                            <input type="confirmpassword" class="form-control"
+                                                                id="confirmpassword"
+                                                                placeholder="   Must be at least 8 characters..."
+                                                                name="confirmpassword">
+                                                        </div>
+                                                    </div>
+                                                    <!-- border right -->
+                                                    <div class="col-sm-6">
+                                                        <div class="boderCheckIn">
+                                                            <h1>Thêm dịch vụ</h1>
+                                                            <div>
+                                                                <select class="form-select3"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>More services</option>
+                                                                    <option value="1">Tay vịn</option>
+                                                                    <option value="2">Gà 54kg</option>
+                                                                    <option value="3">Bưởi 5 roi</option>
+                                                                    <option value="4">Súc bình xăng con</option>
+                                                                    <option value="5">Khác ...</option>
+                                                                </select>
+                                                                <div class="input-group-append"
+                                                                    style="margin:auto ">
+                                                                    <label class="input-group-text"
+                                                                        for="inputGroupSelect02"
+                                                                        style="background-color: greenyellow;">+</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- các nút---------------- -->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-dismiss="modal">UPDATE</button>
+                                                    <button type="button" class="btn btn-primary">CHECK IN</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal room 101====================================================== -->
+                            </div>
+                            <!-- 102 -->
+                            <div class="hh-box col order-2  ml-5 btn-lg">
+                                <div class="word ml-4">
+                                    <p>Romm number: 102</p>
+                                    <p>Type of room: Standard</p>
+                                </div>
+                                <button type="button" class="btn btn-light ml-4">Booking</button>
+                                <button type="button" class="hh-checkin btn btn-light ml-5" data-toggle="modal"
+                                data-target="#exampleModalCenter">Check in</button>
+                            </div>
+                            <!-- 103 -->
+                            <div class="hh-box col order-3  ml-5 btn-lg">
+                                <div class="word ml-4">
+                                    <p>Romm number: 103</p>
+                                    <p>Type of room: Standard</p>
+                                </div>
+
+                                <button type="button" class="btn btn-light ml-4">Booking</button>
+                                <button type="button" class="hh-checkin btn btn-light ml-5" data-toggle="modal"
+                                data-target="#exampleModalCenter">Check in</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="container">
+                        <div class="row" style="margin-top: 100px;">
+
+                            <div class="hh-box col order-4  ml-5 btn-lg">
+                                <div class="word ml-4">
+                                    <p>Romm number: 104</p>
+                                    <p>Type of room: Standard</p>
+                                </div>
+
+                                <button type="button" class="btn btn-light ml-4">Booking</button>
+                                <button type="button" class="hh-checkin btn btn-light ml-5" data-toggle="modal"
+                                data-target="#exampleModalCenter">Check in</button>
+                            </div>
+                            <div class="hh-box col order-5  ml-5 btn-lg">
+                                <div class="word ml-4">
+                                    <p>Romm number: 105</p>
+                                    <p>Type of room: Standard</p>
+                                </div>
+
+                                <button type="button" class="btn btn-light ml-4">Booking</button>
+                                <button type="button" class="hh-checkin btn btn-light ml-5" data-toggle="modal"
+                                data-target="#exampleModalCenter">Check in</button>
+                            </div>
+                            <div class="hh-box col order-6  ml-5 btn-lg">
+                                <div class="word ml-4">
+                                    <p>Romm number: 106</p>
+                                    <p>Type of room: Standard</p>
+                                </div>
+
+                                <button type="button" class="btn btn-light ml-4 ">Booking</button>
+                                <button type="button" class="hh-checkin btn btn-light ml-5" data-toggle="modal"
+                                data-target="#exampleModalCenter">Check in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
